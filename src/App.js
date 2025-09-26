@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import Navbar from "./Component/Navbar";
 import Signup from "./Component/Signup";
 import Login from "./Component/login";
