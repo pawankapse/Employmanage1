@@ -1,75 +1,7 @@
-/* body {
-  font-family: Arial, sans-serif;
-  background: #eff3f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.account {
-  border: 2px solid red;
-  background: rgb(182, 179, 179);
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  width: 320px;
-  
-}
-
-.account:hover {
-background-color: #134287;
-  
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.ename,
-.ppswrd {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  
-}
-.email{
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  
-}
-
-
-
-.sbutton {
-  width: 100%;
-  padding: 12px;
-  background: #0d6efd;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  
-}
-
-.sbutton:hover {
-  background: #084298;
-}
-.nav{
-  background-color:red;
-  height: 50px;
-
-} */
  .accout {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   margin: 60px auto;
   padding: 30px;
   background: #fff;
@@ -121,8 +53,10 @@ background-color: #134287;
 .accout .sbutton:hover {
   background: #4a8ae5;
 }
+
+
+
 .nav {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +64,6 @@ background-color: #134287;
   padding: 15px 0;
   background-color: #333;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  
 }
 
 .nav a {
@@ -144,4 +77,45 @@ background-color: #134287;
 .nav a:hover {
   color: #ffcc00;
   transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .accout {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .accout .heading {
+    font-size: 24px;
+  }
+
+  .accout input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .accout .sbutton {
+    font-size: 15px;
+    padding: 12px;
+  }
 }
